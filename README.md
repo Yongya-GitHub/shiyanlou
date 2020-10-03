@@ -1,6 +1,36 @@
 # Model deployment_Flask 
 
-Web Development of NLP Model in Python & Deployed in Flask
+
+## Positive Reivew Example 
+
+
+
+<p align="center">
+  <img width="460" src="https://raw.githubusercontent.com/YongyaLi/Model-Deployment_Flask/master/review%20test%20example/positive%20review.png">
+</p>
+
+
+## Positive Reivew Prediction 
+<p align="center">
+  <img width="400" src="https://raw.githubusercontent.com/YongyaLi/Model-Deployment_Flask/master/review%20test%20example/positive%20review%20result.png">
+</p>
+
+
+
+
+## Negative Reivew Example 
+
+
+
+<p align="center">
+  <img width="460" src="https://raw.githubusercontent.com/YongyaLi/Model-Deployment_Flask/master/review%20test%20example/negative%20review.png">
+</p>
+
+
+## Negative Reivew Prediction 
+<p align="center">
+  <img width="400" src="https://raw.githubusercontent.com/YongyaLi/Model-Deployment_Flask/master/review%20test%20example/negative%20review%20result.png">
+</p>
 
 
 Reference: 
