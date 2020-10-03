@@ -1,12 +1,18 @@
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
 import pickle
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.model_selection import train_test_split
 import joblib
 
 app = Flask(__name__)
+
+#Vectorizer
+vectorizer = open('vectorizer.pkl','rb')
+cv = joblib.load(vectorizer)
+
+#Naive Bayes Classifier
+NB_model = open('NB_model.pkl','rb')
+clf = joblib.load(NB_model)
+
 
 @app.route('/')
 def home():
@@ -14,14 +20,6 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    #Vectorizer 
-    vectorizer = open('vectorizer.pkl','rb')
-    cv = joblib.load(vectorizer)
-
-    #Naive Bayes Classifier
-    NB_model = open('NB_model.pkl','rb')
-    clf = joblib.load(NB_model)	
-
     if request.method == 'POST':
     	message = request.form['message']
     	data = [message]
